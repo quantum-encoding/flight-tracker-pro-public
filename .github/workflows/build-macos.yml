@@ -9,7 +9,7 @@ on:
 
 jobs:
   build-macos-intel:
-    runs-on: macos-latest
+    runs-on: macos-13  # Intel runner (not macos-latest which is ARM)
     name: Build macOS (Intel)
 
     steps:
@@ -24,8 +24,6 @@ jobs:
 
       - name: Setup Rust
         uses: dtolnay/rust-toolchain@stable
-        with:
-          targets: x86_64-apple-darwin
 
       - name: Rust cache
         uses: Swatinem/rust-cache@v2
@@ -36,17 +34,17 @@ jobs:
         run: npm ci
 
       - name: Build Tauri app (Intel)
-        run: npm run tauri build -- --target x86_64-apple-darwin
+        run: npm run tauri build
 
       - name: Upload macOS Intel DMG
         uses: actions/upload-artifact@v4
         with:
           name: macos-intel-dmg
-          path: src-tauri/target/x86_64-apple-darwin/release/bundle/dmg/*.dmg
+          path: src-tauri/target/release/bundle/dmg/*.dmg
           retention-days: 30
 
   build-macos-arm:
-    runs-on: macos-latest
+    runs-on: macos-latest  # ARM runner (macos-14+)
     name: Build macOS (Apple Silicon)
 
     steps:
@@ -61,8 +59,6 @@ jobs:
 
       - name: Setup Rust
         uses: dtolnay/rust-toolchain@stable
-        with:
-          targets: aarch64-apple-darwin
 
       - name: Rust cache
         uses: Swatinem/rust-cache@v2
@@ -73,11 +69,11 @@ jobs:
         run: npm ci
 
       - name: Build Tauri app (Apple Silicon)
-        run: npm run tauri build -- --target aarch64-apple-darwin
+        run: npm run tauri build
 
       - name: Upload macOS ARM DMG
         uses: actions/upload-artifact@v4
         with:
           name: macos-arm-dmg
-          path: src-tauri/target/aarch64-apple-darwin/release/bundle/dmg/*.dmg
+          path: src-tauri/target/release/bundle/dmg/*.dmg
           retention-days: 30
