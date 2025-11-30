@@ -1,0 +1,552 @@
+{
+  "common": {
+    "appName": "Flight Tracker Pro",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "search": "Search",
+    "filter": "Filter",
+    "close": "Close",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "clear": "Clear",
+    "reset": "Reset",
+    "retry": "Try Again",
+    "yes": "Yes",
+    "no": "No",
+    "optional": "Optional",
+    "required": "Required",
+    "total": "Total",
+    "date": "Date",
+    "time": "Time",
+    "status": "Status",
+    "actions": "Actions",
+    "settings": "Settings",
+    "help": "Help"
+  },
+  "navigation": {
+    "flights": "Flights",
+    "analytics": "Analytics",
+    "logbook": "Pilot Logbook",
+    "passengers": "Passengers",
+    "journeys": "Journeys",
+    "airports": "Airports",
+    "aircraft": "Aircraft Types",
+    "frequentFlyer": "Frequent Flyer Programs",
+    "documents": "Documents",
+    "research": "Research",
+    "settings": "Settings"
+  },
+  "analytics": {
+    "title": "Analytics",
+    "loadButton": "Load Charts",
+    "loading": "Loading...",
+    "failedToLoad": "Failed to load chart data",
+    "tabs": {
+      "overview": "Overview",
+      "charts": "Charts",
+      "reports": "Reports"
+    },
+    "charts": {
+      "temporalGeo": {
+        "title": "Temporal & Geospatial Analysis",
+        "flightPatterns": "Flight Patterns Over Time",
+        "airportConcentration": "Airport Concentration"
+      },
+      "networkComp": {
+        "title": "Network & Comparative Analysis",
+        "passengerNetwork": "Passenger Network",
+        "passengerMetrics": "Passenger Metrics"
+      },
+      "aircraftCost": {
+        "title": "Aircraft & Cost Analysis",
+        "aircraftUtilization": "Aircraft Utilization",
+        "costBreakdown": "Cost Breakdown"
+      },
+      "flightOps": {
+        "title": "Flight Operations",
+        "dayNightStats": "Day/Night Statistics",
+        "longHaulFlights": "Long Haul Flights"
+      },
+      "pilotMetrics": {
+        "title": "Pilot Metrics & Trends",
+        "currencyStatus": "Currency Status",
+        "monthlyCostTrend": "Monthly Cost Trend"
+      },
+      "runwayRisk": {
+        "title": "Runway Risk Assessment"
+      }
+    }
+  },
+  "flights": {
+    "title": "Flights",
+    "addFlight": "Add Flight",
+    "importFlights": "Import Flights",
+    "exportFlights": "Export Flights",
+    "flightNumber": "Flight Number",
+    "departure": "Departure",
+    "arrival": "Arrival",
+    "departureAirport": "Departure Airport",
+    "arrivalAirport": "Arrival Airport",
+    "departureTime": "Departure Time",
+    "arrivalTime": "Arrival Time",
+    "aircraft": "Aircraft",
+    "distance": "Distance",
+    "duration": "Duration",
+    "passengers": "Passengers",
+    "notes": "Notes",
+    "status": "Status",
+    "scheduled": "Scheduled",
+    "completed": "Completed",
+    "cancelled": "Cancelled",
+    "delayed": "Delayed",
+    "filters": {
+      "all": "All Flights",
+      "upcoming": "Upcoming",
+      "past": "Past",
+      "today": "Today",
+      "thisWeek": "This Week",
+      "thisMonth": "This Month",
+      "thisYear": "This Year"
+    },
+    "details": {
+      "title": "Flight Details",
+      "basicInfo": "Basic Information",
+      "timing": "Timing",
+      "routeInfo": "Route Information",
+      "aircraftInfo": "Aircraft Information",
+      "passengerInfo": "Passenger Information",
+      "costInfo": "Cost Information",
+      "additionalInfo": "Additional Information"
+    },
+    "import": {
+      "title": "Import Flights",
+      "selectFile": "Select CSV File",
+      "dragDrop": "Drag and drop CSV file here",
+      "preview": "Preview Import",
+      "mapping": "Column Mapping",
+      "validate": "Validate Data",
+      "import": "Import Flights",
+      "success": "Successfully imported {count} flights",
+      "error": "Failed to import flights"
+    },
+    "manual": {
+      "title": "Manual Flight Entry",
+      "requiredFields": "Required Fields",
+      "optionalFields": "Optional Fields"
+    }
+  },
+  "logbook": {
+    "title": "Pilot Logbook",
+    "totalHours": "Total Hours",
+    "totalFlights": "Total Flights",
+    "dayHours": "Day Hours",
+    "nightHours": "Night Hours",
+    "takeoffs": "Takeoffs",
+    "landings": "Landings",
+    "dayTakeoffs": "Day Takeoffs",
+    "nightTakeoffs": "Night Takeoffs",
+    "dayLandings": "Day Landings",
+    "nightLandings": "Night Landings",
+    "approaches": "Approaches",
+    "holds": "Holds",
+    "crossCountry": "Cross Country",
+    "pic": "PIC (Pilot in Command)",
+    "sic": "SIC (Second in Command)",
+    "dual": "Dual Received",
+    "instructor": "Instructor",
+    "solo": "Solo",
+    "simulator": "Simulator",
+    "instrument": "Instrument",
+    "actualInstrument": "Actual Instrument",
+    "simulatedInstrument": "Simulated Instrument"
+  },
+  "passengers": {
+    "title": "Passengers",
+    "addPassenger": "Add Passenger",
+    "passengerName": "Passenger Name",
+    "abbreviation": "Abbreviation",
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone",
+    "totalFlights": "Total Flights",
+    "totalDistance": "Total Distance",
+    "lastFlight": "Last Flight",
+    "frequentDestinations": "Frequent Destinations",
+    "details": {
+      "title": "Passenger Details",
+      "flightHistory": "Flight History",
+      "statistics": "Statistics",
+      "preferences": "Preferences"
+    }
+  },
+  "journeys": {
+    "title": "Journeys",
+    "createJourney": "Create Journey",
+    "journeyName": "Journey Name",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "flights": "Flights",
+    "totalDistance": "Total Distance",
+    "totalDuration": "Total Duration",
+    "destinations": "Destinations"
+  },
+  "airports": {
+    "title": "Airports",
+    "addAirport": "Add Airport",
+    "airportCode": "Airport Code",
+    "airportName": "Airport Name",
+    "city": "City",
+    "country": "Country",
+    "latitude": "Latitude",
+    "longitude": "Longitude",
+    "timezone": "Timezone",
+    "visits": "Visits",
+    "lastVisit": "Last Visit",
+    "runways": "Runways",
+    "elevation": "Elevation",
+    "details": {
+      "title": "Airport Details",
+      "information": "Information",
+      "statistics": "Statistics",
+      "flightHistory": "Flight History"
+    }
+  },
+  "aircraft": {
+    "title": "Aircraft Types",
+    "addAircraft": "Add Aircraft Type",
+    "manufacturer": "Manufacturer",
+    "model": "Model",
+    "registration": "Registration",
+    "category": "Category",
+    "class": "Class",
+    "totalFlights": "Total Flights",
+    "totalHours": "Total Hours",
+    "details": {
+      "title": "Aircraft Details",
+      "specifications": "Specifications",
+      "performance": "Performance",
+      "flightHistory": "Flight History"
+    }
+  },
+  "frequentFlyer": {
+    "title": "Frequent Flyer Programs",
+    "addProgram": "Add Program",
+    "programName": "Program Name",
+    "memberNumber": "Member Number",
+    "airline": "Airline",
+    "tier": "Tier Status",
+    "points": "Points",
+    "miles": "Miles",
+    "expiryDate": "Expiry Date",
+    "benefits": "Benefits"
+  },
+  "documents": {
+    "title": "Documents",
+    "addDocument": "Add Document",
+    "uploadDocument": "Upload Document",
+    "documentType": "Document Type",
+    "documentName": "Document Name",
+    "uploadDate": "Upload Date",
+    "fileSize": "File Size",
+    "tags": "Tags",
+    "types": {
+      "ticket": "Ticket",
+      "boardingPass": "Boarding Pass",
+      "receipt": "Receipt",
+      "invoice": "Invoice",
+      "itinerary": "Itinerary",
+      "certificate": "Certificate",
+      "license": "License",
+      "other": "Other"
+    }
+  },
+  "research": {
+    "title": "Research",
+    "newResearch": "New Research",
+    "searchQuery": "Search Query",
+    "results": "Results",
+    "sources": "Sources",
+    "citations": "Citations",
+    "relatedFlights": "Related Flights",
+    "investigators": {
+      "title": "Researchers",
+      "addInvestigator": "Add Researcher"
+    },
+    "flightResearch": {
+      "title": "Flight Research",
+      "searchFlight": "Search Flight Information"
+    },
+    "grok": {
+      "title": "Grok Research",
+      "askQuestion": "Ask a Question"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "general": {
+      "title": "General",
+      "language": "Language",
+      "theme": "Theme",
+      "dateFormat": "Date Format",
+      "timeFormat": "Time Format",
+      "timezone": "Timezone",
+      "currency": "Currency",
+      "distanceUnit": "Distance Unit",
+      "themes": {
+        "light": "Light",
+        "dark": "Dark",
+        "auto": "Auto"
+      },
+      "units": {
+        "kilometers": "Kilometers",
+        "miles": "Miles",
+        "nauticalMiles": "Nautical Miles"
+      }
+    },
+    "database": {
+      "title": "Database",
+      "location": "Database Location",
+      "backup": "Backup Database",
+      "restore": "Restore Database",
+      "export": "Export Data",
+      "import": "Import Data"
+    },
+    "privacy": {
+      "title": "Privacy",
+      "dataCollection": "Data Collection",
+      "analytics": "Analytics",
+      "crashReports": "Crash Reports"
+    },
+    "about": {
+      "title": "About",
+      "version": "Version",
+      "buildNumber": "Build Number",
+      "licenses": "Open Source Licenses",
+      "documentation": "Documentation",
+      "support": "Support"
+    }
+  },
+  "setup": {
+    "title": "Setup Wizard",
+    "welcome": "Welcome to Flight Tracker Pro",
+    "selectDataset": "Select Dataset Location",
+    "configure": "Configure Settings",
+    "complete": "Setup Complete",
+    "getStarted": "Get Started"
+  },
+  "errors": {
+    "networkError": "Network error occurred",
+    "serverError": "Server error occurred",
+    "notFound": "Not found",
+    "unauthorized": "Unauthorized access",
+    "validationError": "Validation error",
+    "unknownError": "An unknown error occurred",
+    "tryAgain": "Please try again"
+  },
+  "validation": {
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address",
+    "invalidDate": "Invalid date",
+    "invalidNumber": "Invalid number",
+    "minLength": "Minimum length is {min} characters",
+    "maxLength": "Maximum length is {max} characters",
+    "min": "Minimum value is {min}",
+    "max": "Maximum value is {max}"
+  },
+  "time": {
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "tomorrow": "Tomorrow",
+    "thisWeek": "This Week",
+    "lastWeek": "Last Week",
+    "thisMonth": "This Month",
+    "lastMonth": "Last Month",
+    "thisYear": "This Year",
+    "lastYear": "Last Year",
+    "daysAgo": "{count} days ago",
+    "hoursAgo": "{count} hours ago",
+    "minutesAgo": "{count} minutes ago",
+    "justNow": "Just now"
+  },
+  "units": {
+    "km": "km",
+    "mi": "mi",
+    "nm": "nm",
+    "hours": "hours",
+    "minutes": "minutes",
+    "seconds": "seconds",
+    "kg": "kg",
+    "lbs": "lbs",
+    "meters": "m",
+    "feet": "ft",
+    "gallons": "gal",
+    "liters": "L"
+  },
+  "fuel": {
+    "title": "Fuel Tracker",
+    "tabs": {
+      "search": "AI Price Search",
+      "entries": "My Fuel Log",
+      "prices": "Price Database"
+    },
+    "search": {
+      "placeholder": "Search for fuel prices (e.g., 'Jet-A at KJFK' or 'Avgas in California')",
+      "button": "Search",
+      "searching": "Searching...",
+      "noResults": "No results found",
+      "error": "Search failed"
+    },
+    "types": {
+      "jet_a": "Jet-A",
+      "avgas_100ll": "100LL Avgas",
+      "mogas": "Mogas"
+    },
+    "entry": {
+      "add": "Add Fuel Entry",
+      "airport": "Airport Code",
+      "location": "Location Name",
+      "fuelType": "Fuel Type",
+      "gallons": "Gallons",
+      "pricePerGallon": "Price per Gallon",
+      "purchaseDate": "Purchase Date",
+      "fboName": "FBO Name",
+      "notes": "Notes",
+      "totalCost": "Total Cost"
+    },
+    "stats": {
+      "totalSpent": "Total Spent",
+      "totalGallons": "Total Gallons",
+      "avgPrice": "Avg Price/Gal",
+      "entries": "Entries"
+    },
+    "empty": {
+      "entries": "No fuel entries yet",
+      "prices": "No cached prices",
+      "addFirst": "Add your first fuel entry"
+    }
+  },
+  "schemaBuilder": {
+    "title": "Custom Database Builder",
+    "newSchema": "New Schema",
+    "tabs": {
+      "schemas": "My Schemas",
+      "builder": "Schema Builder",
+      "records": "Records"
+    },
+    "schema": {
+      "displayName": "Display Name",
+      "description": "Description",
+      "color": "Color",
+      "delete": "Delete",
+      "noSchemas": "No custom schemas yet",
+      "createFirst": "Create your first schema"
+    },
+    "fields": {
+      "title": "Fields",
+      "add": "Add Field",
+      "name": "Field Name",
+      "type": "Type",
+      "default": "Default",
+      "required": "Required",
+      "options": "Options (comma-separated)",
+      "noFields": "No fields yet. Click \"Add Field\" to start."
+    },
+    "fieldTypes": {
+      "text": "Text",
+      "number": "Number",
+      "date": "Date",
+      "datetime": "Date & Time",
+      "boolean": "Yes/No",
+      "select": "Dropdown",
+      "email": "Email",
+      "url": "URL",
+      "currency": "Currency",
+      "textarea": "Long Text"
+    },
+    "records": {
+      "add": "Add Record",
+      "edit": "Edit",
+      "delete": "Delete",
+      "noRecords": "No records yet",
+      "addFirst": "Add your first record",
+      "count": "{count} record(s)"
+    },
+    "actions": {
+      "create": "Create Schema",
+      "creating": "Creating...",
+      "save": "Save",
+      "saving": "Saving..."
+    }
+  },
+  "insights": {
+    "title": "System Insights",
+    "refresh": "Refresh",
+    "tabs": {
+      "overview": "Overview",
+      "anomalies": "Anomalies",
+      "duplicates": "Duplicates",
+      "fuel": "Fuel Prices",
+      "routes": "Routes"
+    },
+    "stats": {
+      "routesLearned": "Routes Learned",
+      "fuelPricesStored": "Fuel Prices Stored",
+      "aiResponsesCached": "AI Responses Cached",
+      "userPatterns": "User Patterns",
+      "correctionsLearned": "Corrections Learned",
+      "behavioralPatterns": "Behavioral Patterns",
+      "routeStatistics": "Route Statistics"
+    },
+    "issues": {
+      "title": "Pending Issues",
+      "anomaliesToReview": "Anomalies to Review",
+      "potentialDuplicates": "Potential Duplicates"
+    },
+    "learningStatus": {
+      "title": "Self-Learning Status"
+    },
+    "anomalies": {
+      "noAnomalies": "No anomalies detected",
+      "markResolved": "Mark Resolved",
+      "suggestion": "Suggestion"
+    },
+    "duplicates": {
+      "noDuplicates": "No duplicate flights detected",
+      "match": "Match",
+      "keepBoth": "Keep Both",
+      "merge": "Merge"
+    },
+    "fuelPrices": {
+      "noData": "No fuel prices stored yet",
+      "searchToAdd": "Search for fuel prices to build your database",
+      "location": "Location",
+      "type": "Type",
+      "pricePerGal": "Price/gal",
+      "date": "Date",
+      "source": "Source",
+      "count": "{count} prices in database"
+    },
+    "routes": {
+      "noData": "No route statistics yet",
+      "learnedFromFlights": "Routes are learned as you add flights",
+      "route": "Route",
+      "avgDuration": "Avg Duration",
+      "avgDistance": "Avg Distance",
+      "flights": "Flights"
+    }
+  },
+  "navigation2": {
+    "fuel": "Fuel",
+    "customDb": "Custom DB",
+    "insights": "Insights"
+  }
+}

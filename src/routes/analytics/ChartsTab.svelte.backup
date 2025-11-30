@@ -1,0 +1,31 @@
+<!-- src/routes/analytics/ChartsTab.svelte -->
+<script lang="ts">
+  import { invoke } from '@tauri-apps/api/core';
+  import TemporalChart from '$lib/components/analytics/TemporalChart.svelte';
+  // ... import all the new ones
+
+  let activeTab = 'temporal';
+</script>
+
+<div class="p-6">
+  <div class="tabs tabs-boxed mb-6">
+    <a class="tab" class:tab-active={activeTab==='temporal'} on:click={() => activeTab='temporal'}>When</a>
+    <a class="tab" class:tab-active={activeTab==='geospatial'} on:click={() => activeTab='geospatial'}>Where</a>
+    <a class="tab" class:tab-active={activeTab==='network'} on:click={() => activeTab='network'}>Who</a>
+    <a class="tab" class:tab-active={activeTab==='fleet'} on:click={() => activeTab='fleet'}>Fleet</a>
+    <a class="tab" class:tab-active={activeTab==='costs'} on:click={() => activeTab='costs'}>Money</a>
+    <a class="tab" class:tab-active={activeTab==='currency'} on:click={() => activeTab='currency'}>Currency ⚡</a>
+    <a class="tab" class:tab-active={activeTab==='epic'} on:click={() => activeTab='epic'}>Epic Flights</a>
+  </div>
+
+  {#if activeTab === 'temporal'} <TemporalChart {...} /> {/if}
+  {#if activeTab === 'fleet'} <AircraftUtilizationChart data={await invoke('get_aircraft_utilization', {userId})} /> {/if}
+  {#if activeTab === 'costs'} 
+    <div class="grid grid-cols-2 gap-6">
+      <CostBreakdownDonut data={await invoke('get_cost_breakdown', {userId})} />
+      <MonthlyCostTrend data={await invoke('get_monthly_cost_trend', {userId})} />
+    </div>
+  {/if}
+  {#if activeTab === 'currency'} <PilotCurrencyDashboard items={await invoke('get_pilot_currency', {userId})} /> {/if}
+  <!-- etc... -->
+</div>

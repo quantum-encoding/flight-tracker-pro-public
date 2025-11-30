@@ -1,0 +1,91 @@
+[package]
+name = "flight-tracker-pro"
+version = "0.1.0"
+description = "Advanced flight management and tracking application for desktop power users"
+authors = ["Quantum Encoding LTD"]
+edition = "2021"
+default-run = "flight-tracker-pro"
+
+[lib]
+# The `_lib` suffix may seem redundant but it is necessary
+# to make the lib name unique and wouldn't conflict with the bin name.
+# This seems to be only an issue on Windows, see https://github.com/rust-lang/cargo/issues/8519
+name = "flight_tracker_pro_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+# Tauri framework
+tauri = { version = "2", features = ["protocol-asset"] }
+tauri-plugin-opener = "2"
+tauri-plugin-dialog = "2.0"
+tauri-plugin-fs = "2.0"
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# Database
+rusqlite = { version = "0.32", features = ["bundled"] }
+
+# Utilities
+chrono = { version = "0.4", features = ["serde"] }
+uuid = { version = "1.10", features = ["v4", "serde"] }
+anyhow = "1.0"
+thiserror = "1.0"
+async-trait = "0.1"
+petgraph = "0.6"
+tracing = "0.1"
+csv = "1.3"
+rand = "0.8"
+dirs = "5.0"
+sha2 = "0.10"
+md5 = "0.7"
+git2 = "0.19"
+
+# Networking for Gemini API and web search
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls", "multipart"] }
+base64 = "0.22"
+regex = "1.10"
+urlencoding = "2.1"
+html-escape = "0.2"
+
+# PDF generation and parsing
+genpdf = "0.2"
+pdf-extract = "0.7"
+lopdf = "0.32"
+image = "0.25"
+
+# Network scanning for physical security monitoring
+btleplug = "0.11"
+futures = "0.3"
+
+# WebSocket server for agent command bridge
+tokio-tungstenite = "0.21"
+
+# HTTP REST API for mobile Tailscale access
+axum = "0.7"
+tower = "0.4"
+tower-http = { version = "0.5", features = ["cors"] }
+
+# CLI argument parsing for ftp-cli
+clap = { version = "4", features = ["derive"] }
+
+# QR code generation for donation addresses
+qrcode = "0.14"
+
+[[bin]]
+name = "ftp-cli"
+path = "src/bin/ftp_cli.rs"
+
+[[bin]]
+name = "ingest-logs"
+path = "src/bin/ingest_logs.rs"
+
+[[bin]]
+name = "identity-fusion"
+path = "src/bin/identity_fusion.rs"
+

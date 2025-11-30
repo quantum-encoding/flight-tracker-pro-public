@@ -1,0 +1,552 @@
+{
+  "common": {
+    "appName": "Flight Tracker Pro",
+    "loading": "Cargando",
+    "error": "Error",
+    "success": "Éxito",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "add": "Añadir",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "close": "Cerrar",
+    "confirm": "Confirmar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "submit": "Enviar",
+    "clear": "Limpiar",
+    "reset": "Restablecer",
+    "retry": "Reintentar",
+    "yes": "Sí",
+    "no": "No",
+    "optional": "Opcional",
+    "required": "Obligatorio",
+    "total": "Total",
+    "date": "Fecha",
+    "time": "Hora",
+    "status": "Estado",
+    "actions": "Acciones",
+    "settings": "Configuración",
+    "help": "Ayuda"
+  },
+  "navigation": {
+    "flights": "Vuelos",
+    "analytics": "Análisis",
+    "logbook": "Libro de vuelo",
+    "passengers": "Pasajeros",
+    "journeys": "Viajes",
+    "airports": "Aeropuertos",
+    "aircraft": "Aeronaves",
+    "frequentFlyer": "Viajero frecuente",
+    "documents": "Documentos",
+    "research": "Investigación",
+    "settings": "Configuración"
+  },
+  "analytics": {
+    "title": "Análisis",
+    "loadButton": "Cargar gráficos",
+    "loading": "Cargando análisis",
+    "failedToLoad": "Error al cargar análisis",
+    "tabs": {
+      "overview": "Resumen",
+      "charts": "Gráficos",
+      "reports": "Informes"
+    },
+    "charts": {
+      "temporalGeo": {
+        "title": "Análisis temporal y geográfico",
+        "flightPatterns": "Patrones de vuelo",
+        "airportConcentration": "Concentración de aeropuertos"
+      },
+      "networkComp": {
+        "title": "Red y comparativas",
+        "passengerNetwork": "Red de pasajeros",
+        "passengerMetrics": "Métricas de pasajeros"
+      },
+      "aircraftCost": {
+        "title": "Aeronaves y costos",
+        "aircraftUtilization": "Utilización de aeronaves",
+        "costBreakdown": "Desglose de costos"
+      },
+      "flightOps": {
+        "title": "Operaciones de vuelo",
+        "dayNightStats": "Estadísticas día/noche",
+        "longHaulFlights": "Vuelos de largo recorrido"
+      },
+      "pilotMetrics": {
+        "title": "Métricas de piloto",
+        "currencyStatus": "Estado de vigencia",
+        "monthlyCostTrend": "Tendencia de costos mensuales"
+      },
+      "runwayRisk": {
+        "title": "Riesgo de pista"
+      }
+    }
+  },
+  "flights": {
+    "title": "Vuelos",
+    "addFlight": "Añadir vuelo",
+    "importFlights": "Importar vuelos",
+    "exportFlights": "Exportar vuelos",
+    "flightNumber": "Número de vuelo",
+    "departure": "Salida",
+    "arrival": "Llegada",
+    "departureAirport": "Aeropuerto de salida",
+    "arrivalAirport": "Aeropuerto de llegada",
+    "departureTime": "Hora de salida",
+    "arrivalTime": "Hora de llegada",
+    "aircraft": "Aeronave",
+    "distance": "Distancia",
+    "duration": "Duración",
+    "passengers": "Pasajeros",
+    "notes": "Notas",
+    "status": "Estado",
+    "scheduled": "Programado",
+    "completed": "Completado",
+    "cancelled": "Cancelado",
+    "delayed": "Retrasado",
+    "filters": {
+      "all": "Todos",
+      "upcoming": "Próximos",
+      "past": "Pasados",
+      "today": "Hoy",
+      "thisWeek": "Esta semana",
+      "thisMonth": "Este mes",
+      "thisYear": "Este año"
+    },
+    "details": {
+      "title": "Detalles del vuelo",
+      "basicInfo": "Información básica",
+      "timing": "Horarios",
+      "routeInfo": "Información de ruta",
+      "aircraftInfo": "Información de aeronave",
+      "passengerInfo": "Información de pasajeros",
+      "costInfo": "Información de costos",
+      "additionalInfo": "Información adicional"
+    },
+    "import": {
+      "title": "Importar vuelos",
+      "selectFile": "Seleccionar archivo",
+      "dragDrop": "Arrastrar y soltar",
+      "preview": "Vista previa",
+      "mapping": "Mapeo",
+      "validate": "Validar",
+      "import": "Importar",
+      "success": "Importación exitosa",
+      "error": "Error de importación"
+    },
+    "manual": {
+      "title": "Añadir vuelo manualmente",
+      "requiredFields": "Campos obligatorios",
+      "optionalFields": "Campos opcionales"
+    }
+  },
+  "logbook": {
+    "title": "Libro de vuelo",
+    "totalHours": "Horas totales",
+    "totalFlights": "Vuelos totales",
+    "dayHours": "Horas diurnas",
+    "nightHours": "Horas nocturnas",
+    "takeoffs": "Despegues",
+    "landings": "Aterrizajes",
+    "dayTakeoffs": "Despegues diurnos",
+    "nightTakeoffs": "Despegues nocturnos",
+    "dayLandings": "Aterrizajes diurnos",
+    "nightLandings": "Aterrizajes nocturnos",
+    "approaches": "Aproximaciones",
+    "holds": "Esperas",
+    "crossCountry": "Campo traviesa",
+    "pic": "Piloto al mando",
+    "sic": "Copiloto",
+    "dual": "Doble mando",
+    "instructor": "Instructor",
+    "solo": "Solo",
+    "simulator": "Simulador",
+    "instrument": "Instrumental",
+    "actualInstrument": "Instrumental real",
+    "simulatedInstrument": "Instrumental simulado"
+  },
+  "passengers": {
+    "title": "Pasajeros",
+    "addPassenger": "Añadir pasajero",
+    "passengerName": "Nombre del pasajero",
+    "abbreviation": "Abreviatura",
+    "fullName": "Nombre completo",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "totalFlights": "Vuelos totales",
+    "totalDistance": "Distancia total",
+    "lastFlight": "Último vuelo",
+    "frequentDestinations": "Destinos frecuentes",
+    "details": {
+      "title": "Detalles del pasajero",
+      "flightHistory": "Historial de vuelos",
+      "statistics": "Estadísticas",
+      "preferences": "Preferencias"
+    }
+  },
+  "journeys": {
+    "title": "Viajes",
+    "createJourney": "Crear viaje",
+    "journeyName": "Nombre del viaje",
+    "startDate": "Fecha de inicio",
+    "endDate": "Fecha de finalización",
+    "flights": "Vuelos",
+    "totalDistance": "Distancia total",
+    "totalDuration": "Duración total",
+    "destinations": "Destinos"
+  },
+  "airports": {
+    "title": "Aeropuertos",
+    "addAirport": "Añadir aeropuerto",
+    "airportCode": "Código de aeropuerto",
+    "airportName": "Nombre del aeropuerto",
+    "city": "Ciudad",
+    "country": "País",
+    "latitude": "Latitud",
+    "longitude": "Longitud",
+    "timezone": "Zona horaria",
+    "visits": "Visitas",
+    "lastVisit": "Última visita",
+    "runways": "Pistas",
+    "elevation": "Elevación",
+    "details": {
+      "title": "Detalles del aeropuerto",
+      "information": "Información",
+      "statistics": "Estadísticas",
+      "flightHistory": "Historial de vuelos"
+    }
+  },
+  "aircraft": {
+    "title": "Aeronaves",
+    "addAircraft": "Añadir aeronave",
+    "manufacturer": "Fabricante",
+    "model": "Modelo",
+    "registration": "Matrícula",
+    "category": "Categoría",
+    "class": "Clase",
+    "totalFlights": "Vuelos totales",
+    "totalHours": "Horas totales",
+    "details": {
+      "title": "Detalles de aeronave",
+      "specifications": "Especificaciones",
+      "performance": "Rendimiento",
+      "flightHistory": "Historial de vuelos"
+    }
+  },
+  "frequentFlyer": {
+    "title": "Viajero frecuente",
+    "addProgram": "Añadir programa",
+    "programName": "Nombre del programa",
+    "memberNumber": "Número de socio",
+    "airline": "Aerolínea",
+    "tier": "Nivel",
+    "points": "Puntos",
+    "miles": "Millas",
+    "expiryDate": "Fecha de vencimiento",
+    "benefits": "Beneficios"
+  },
+  "documents": {
+    "title": "Documentos",
+    "addDocument": "Añadir documento",
+    "uploadDocument": "Subir documento",
+    "documentType": "Tipo de documento",
+    "documentName": "Nombre del documento",
+    "uploadDate": "Fecha de carga",
+    "fileSize": "Tamaño del archivo",
+    "tags": "Etiquetas",
+    "types": {
+      "ticket": "Billete",
+      "boardingPass": "Tarjeta de embarque",
+      "receipt": "Recibo",
+      "invoice": "Factura",
+      "itinerary": "Itinerario",
+      "certificate": "Certificado",
+      "license": "Licencia",
+      "other": "Otro"
+    }
+  },
+  "research": {
+    "title": "Investigación",
+    "newResearch": "Nueva investigación",
+    "searchQuery": "Consulta de búsqueda",
+    "results": "Resultados",
+    "sources": "Fuentes",
+    "citations": "Citas",
+    "relatedFlights": "Vuelos relacionados",
+    "investigators": {
+      "title": "Investigadores",
+      "addInvestigator": "Añadir investigador"
+    },
+    "flightResearch": {
+      "title": "Investigación de vuelo",
+      "searchFlight": "Buscar vuelo"
+    },
+    "grok": {
+      "title": "Grok",
+      "askQuestion": "Hacer pregunta"
+    }
+  },
+  "settings": {
+    "title": "Configuración",
+    "general": {
+      "title": "General",
+      "language": "Idioma",
+      "theme": "Tema",
+      "dateFormat": "Formato de fecha",
+      "timeFormat": "Formato de hora",
+      "timezone": "Zona horaria",
+      "currency": "Moneda",
+      "distanceUnit": "Unidad de distancia",
+      "themes": {
+        "light": "Claro",
+        "dark": "Oscuro",
+        "auto": "Automático"
+      },
+      "units": {
+        "kilometers": "Kilómetros",
+        "miles": "Millas",
+        "nauticalMiles": "Millas náuticas"
+      }
+    },
+    "database": {
+      "title": "Base de datos",
+      "location": "Ubicación",
+      "backup": "Copia de seguridad",
+      "restore": "Restaurar",
+      "export": "Exportar",
+      "import": "Importar"
+    },
+    "privacy": {
+      "title": "Privacidad",
+      "dataCollection": "Recopilación de datos",
+      "analytics": "Análisis",
+      "crashReports": "Informes de fallos"
+    },
+    "about": {
+      "title": "Acerca de",
+      "version": "Versión",
+      "buildNumber": "Número de compilación",
+      "licenses": "Licencias",
+      "documentation": "Documentación",
+      "support": "Soporte"
+    }
+  },
+  "setup": {
+    "title": "Configuración inicial",
+    "welcome": "Bienvenido",
+    "selectDataset": "Seleccionar conjunto de datos",
+    "configure": "Configurar",
+    "complete": "Completado",
+    "getStarted": "Comenzar"
+  },
+  "errors": {
+    "networkError": "Error de red",
+    "serverError": "Error del servidor",
+    "notFound": "No encontrado",
+    "unauthorized": "No autorizado",
+    "validationError": "Error de validación",
+    "unknownError": "Error desconocido",
+    "tryAgain": "Intentar de nuevo"
+  },
+  "validation": {
+    "required": "Este campo es obligatorio",
+    "invalidEmail": "Correo electrónico inválido",
+    "invalidDate": "Fecha inválida",
+    "invalidNumber": "Número inválido",
+    "minLength": "Longitud mínima no alcanzada",
+    "maxLength": "Longitud máxima excedida",
+    "min": "Valor mínimo no alcanzado",
+    "max": "Valor máximo excedido"
+  },
+  "time": {
+    "today": "Hoy",
+    "yesterday": "Ayer",
+    "tomorrow": "Mañana",
+    "thisWeek": "Esta semana",
+    "lastWeek": "Semana pasada",
+    "thisMonth": "Este mes",
+    "lastMonth": "Mes pasado",
+    "thisYear": "Este año",
+    "lastYear": "Año pasado",
+    "daysAgo": "hace días",
+    "hoursAgo": "hace horas",
+    "minutesAgo": "hace minutos",
+    "justNow": "ahora mismo"
+  },
+  "units": {
+    "km": "km",
+    "mi": "mi",
+    "nm": "mn",
+    "hours": "horas",
+    "minutes": "minutos",
+    "seconds": "segundos",
+    "kg": "kg",
+    "lbs": "lbs",
+    "meters": "metros",
+    "feet": "pies",
+    "gallons": "gal",
+    "liters": "L"
+  },
+  "fuel": {
+    "title": "Combustible",
+    "tabs": {
+      "search": "Búsqueda IA de Precios",
+      "entries": "Mi Registro de Combustible",
+      "prices": "Base de Datos de Precios"
+    },
+    "search": {
+      "placeholder": "Buscar precios de combustible (ej. 'Jet-A en KJFK' o 'Avgas en California')",
+      "button": "Buscar",
+      "searching": "Buscando...",
+      "noResults": "Sin resultados",
+      "error": "Error en la búsqueda"
+    },
+    "types": {
+      "jet_a": "Jet-A",
+      "avgas_100ll": "Avgas 100LL",
+      "mogas": "Mogas"
+    },
+    "entry": {
+      "add": "Añadir Entrada de Combustible",
+      "airport": "Código de Aeropuerto",
+      "location": "Nombre del Lugar",
+      "fuelType": "Tipo de Combustible",
+      "gallons": "Galones",
+      "pricePerGallon": "Precio por Galón",
+      "purchaseDate": "Fecha de Compra",
+      "fboName": "Nombre del FBO",
+      "notes": "Notas",
+      "totalCost": "Costo Total"
+    },
+    "stats": {
+      "totalSpent": "Total Gastado",
+      "totalGallons": "Galones Totales",
+      "avgPrice": "Precio Prom/Gal",
+      "entries": "Entradas"
+    },
+    "empty": {
+      "entries": "Sin entradas de combustible aún",
+      "prices": "Sin precios en caché",
+      "addFirst": "Añade tu primera entrada de combustible"
+    }
+  },
+  "schemaBuilder": {
+    "title": "Constructor de Base de Datos Personalizada",
+    "newSchema": "Nuevo Esquema",
+    "tabs": {
+      "schemas": "Mis Esquemas",
+      "builder": "Constructor de Esquemas",
+      "records": "Registros"
+    },
+    "schema": {
+      "displayName": "Nombre para Mostrar",
+      "description": "Descripción",
+      "color": "Color",
+      "delete": "Eliminar",
+      "noSchemas": "Sin esquemas personalizados aún",
+      "createFirst": "Crea tu primer esquema"
+    },
+    "fields": {
+      "title": "Campos",
+      "add": "Añadir Campo",
+      "name": "Nombre del Campo",
+      "type": "Tipo",
+      "default": "Predeterminado",
+      "required": "Obligatorio",
+      "options": "Opciones (separadas por coma)",
+      "noFields": "Sin campos aún. Haz clic en \"Añadir Campo\" para comenzar."
+    },
+    "fieldTypes": {
+      "text": "Texto",
+      "number": "Número",
+      "date": "Fecha",
+      "datetime": "Fecha y Hora",
+      "boolean": "Sí/No",
+      "select": "Desplegable",
+      "email": "Correo Electrónico",
+      "url": "URL",
+      "currency": "Moneda",
+      "textarea": "Texto Largo"
+    },
+    "records": {
+      "add": "Añadir Registro",
+      "edit": "Editar",
+      "delete": "Eliminar",
+      "noRecords": "Sin registros aún",
+      "addFirst": "Añade tu primer registro",
+      "count": "{count} registro(s)"
+    },
+    "actions": {
+      "create": "Crear Esquema",
+      "creating": "Creando...",
+      "save": "Guardar",
+      "saving": "Guardando..."
+    }
+  },
+  "insights": {
+    "title": "Información del Sistema",
+    "refresh": "Actualizar",
+    "tabs": {
+      "overview": "Resumen",
+      "anomalies": "Anomalías",
+      "duplicates": "Duplicados",
+      "fuel": "Precios de Combustible",
+      "routes": "Rutas"
+    },
+    "stats": {
+      "routesLearned": "Rutas Aprendidas",
+      "fuelPricesStored": "Precios de Combustible Almacenados",
+      "aiResponsesCached": "Respuestas IA en Caché",
+      "userPatterns": "Patrones de Usuario",
+      "correctionsLearned": "Correcciones Aprendidas",
+      "behavioralPatterns": "Patrones de Comportamiento",
+      "routeStatistics": "Estadísticas de Rutas"
+    },
+    "issues": {
+      "title": "Problemas Pendientes",
+      "anomaliesToReview": "Anomalías por Revisar",
+      "potentialDuplicates": "Posibles Duplicados"
+    },
+    "learningStatus": {
+      "title": "Estado de Autoaprendizaje"
+    },
+    "anomalies": {
+      "noAnomalies": "No se detectaron anomalías",
+      "markResolved": "Marcar como Resuelto",
+      "suggestion": "Sugerencia"
+    },
+    "duplicates": {
+      "noDuplicates": "No se detectaron vuelos duplicados",
+      "match": "Coincidencia",
+      "keepBoth": "Mantener Ambos",
+      "merge": "Fusionar"
+    },
+    "fuelPrices": {
+      "noData": "Sin precios de combustible almacenados aún",
+      "searchToAdd": "Busca precios de combustible para construir tu base de datos",
+      "location": "Ubicación",
+      "type": "Tipo",
+      "pricePerGal": "Precio/gal",
+      "date": "Fecha",
+      "source": "Fuente",
+      "count": "{count} precios en la base de datos"
+    },
+    "routes": {
+      "noData": "Sin estadísticas de rutas aún",
+      "learnedFromFlights": "Las rutas se aprenden a medida que añades vuelos",
+      "route": "Ruta",
+      "avgDuration": "Duración Prom",
+      "avgDistance": "Distancia Prom",
+      "flights": "Vuelos"
+    }
+  },
+  "navigation2": {
+    "fuel": "Combustible",
+    "customDb": "BD Personalizada",
+    "insights": "Información"
+  }
+}

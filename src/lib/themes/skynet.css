@@ -1,0 +1,447 @@
+/**
+ * SKYNET THEME - Blue/Black Cyberpunk Style
+ *
+ * A futuristic, neon-blue themed stylesheet inspired by sci-fi interfaces.
+ *
+ * USAGE:
+ * 1. Import this file: @import './skynet.css';
+ * 2. Add data-theme="skynet" to your root element or body
+ * 3. Or use .skynet class on any container
+ *
+ * Example:
+ *   <body data-theme="skynet">
+ *   or
+ *   <div class="skynet">
+ */
+
+/* ============================================
+   CSS VARIABLES
+   ============================================ */
+
+[data-theme="skynet"],
+.skynet {
+  /* Background colors - Pure black and dark blue */
+  --skynet-bg-primary: #000000;
+  --skynet-bg-secondary: #0a0a15;
+  --skynet-bg-tertiary: #050510;
+  --skynet-bg-card: linear-gradient(135deg, #0a0a15, #000000);
+
+  /* Neon blue colors */
+  --skynet-neon-blue: #0080ff;
+  --skynet-neon-cyan: #00b4ff;
+  --skynet-neon-electric: #0040ff;
+  --skynet-neon-ice: #4da6ff;
+  --skynet-neon-cobalt: #0052cc;
+
+  /* Text colors */
+  --skynet-text-primary: #ffffff;
+  --skynet-text-secondary: #d4e6ff;
+  --skynet-text-muted: #8fb3d9;
+
+  /* Border and glow */
+  --skynet-border: rgba(0, 128, 255, 0.3);
+  --skynet-border-solid: #0080ff;
+  --skynet-glow-soft: 0 0 10px rgba(0, 128, 255, 0.3);
+  --skynet-glow-medium: 0 0 20px rgba(0, 128, 255, 0.5);
+  --skynet-glow-strong: 0 0 30px rgba(0, 128, 255, 0.8);
+
+  /* Shadows */
+  --skynet-shadow-card: 0 0 30px rgba(0, 128, 255, 0.15), inset 0 0 60px rgba(0, 128, 255, 0.03);
+  --skynet-shadow-button: 0 0 20px rgba(0, 128, 255, 0.5), inset 0 0 20px rgba(0, 128, 255, 0.1);
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+[data-theme="skynet"],
+.skynet {
+  background-color: var(--skynet-bg-primary);
+  color: var(--skynet-text-primary);
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+[data-theme="skynet"] h1,
+[data-theme="skynet"] h2,
+[data-theme="skynet"] h3,
+.skynet h1,
+.skynet h2,
+.skynet h3 {
+  color: var(--skynet-text-primary);
+  text-shadow: 0 0 10px rgba(212, 230, 255, 0.3);
+  animation: skynet-text-glow 3s ease-in-out infinite;
+}
+
+[data-theme="skynet"] p,
+[data-theme="skynet"] span,
+.skynet p,
+.skynet span {
+  color: var(--skynet-text-secondary);
+}
+
+[data-theme="skynet"] .text-muted,
+.skynet .text-muted {
+  color: var(--skynet-text-muted);
+}
+
+/* ============================================
+   CARDS & CONTAINERS
+   ============================================ */
+
+[data-theme="skynet"] .card,
+[data-theme="skynet"] .panel,
+[data-theme="skynet"] .box,
+.skynet .card,
+.skynet .panel,
+.skynet .box {
+  background: var(--skynet-bg-card);
+  border: 2px solid var(--skynet-border);
+  box-shadow: var(--skynet-shadow-card);
+  border-radius: 8px;
+}
+
+[data-theme="skynet"] .card:hover,
+[data-theme="skynet"] .panel:hover,
+.skynet .card:hover,
+.skynet .panel:hover {
+  border-color: var(--skynet-neon-blue);
+  box-shadow: 0 0 40px rgba(0, 128, 255, 0.4);
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+
+[data-theme="skynet"] .btn,
+[data-theme="skynet"] button,
+.skynet .btn,
+.skynet button {
+  background: linear-gradient(135deg, var(--skynet-neon-electric), var(--skynet-neon-cyan));
+  border: 2px solid var(--skynet-neon-blue);
+  box-shadow: var(--skynet-shadow-button);
+  color: var(--skynet-text-primary);
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+[data-theme="skynet"] .btn:hover,
+[data-theme="skynet"] button:hover,
+.skynet .btn:hover,
+.skynet button:hover {
+  box-shadow: var(--skynet-glow-strong), inset 0 0 30px rgba(0, 128, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Button variants */
+[data-theme="skynet"] .btn-success,
+.skynet .btn-success {
+  background: var(--skynet-neon-ice);
+  border-color: var(--skynet-neon-ice);
+  box-shadow: 0 0 20px rgba(77, 166, 255, 0.5);
+  color: #000000;
+}
+
+[data-theme="skynet"] .btn-danger,
+.skynet .btn-danger {
+  background: linear-gradient(135deg, #6600ff, #0040ff);
+  border-color: #6600ff;
+  box-shadow: 0 0 20px rgba(102, 0, 255, 0.5);
+}
+
+[data-theme="skynet"] .btn-secondary,
+.skynet .btn-secondary {
+  background: var(--skynet-neon-cobalt);
+  border-color: var(--skynet-neon-cobalt);
+  box-shadow: 0 0 15px rgba(0, 82, 204, 0.4);
+}
+
+/* ============================================
+   FORM INPUTS
+   ============================================ */
+
+[data-theme="skynet"] input,
+[data-theme="skynet"] select,
+[data-theme="skynet"] textarea,
+.skynet input,
+.skynet select,
+.skynet textarea {
+  background-color: var(--skynet-bg-tertiary);
+  border: 2px solid var(--skynet-border);
+  color: var(--skynet-text-primary);
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+[data-theme="skynet"] input:focus,
+[data-theme="skynet"] select:focus,
+[data-theme="skynet"] textarea:focus,
+.skynet input:focus,
+.skynet select:focus,
+.skynet textarea:focus {
+  border-color: var(--skynet-neon-blue);
+  box-shadow: 0 0 20px rgba(0, 128, 255, 0.4);
+  outline: none;
+}
+
+[data-theme="skynet"] input::placeholder,
+.skynet input::placeholder {
+  color: var(--skynet-text-muted);
+}
+
+/* ============================================
+   TABLES
+   ============================================ */
+
+[data-theme="skynet"] table,
+.skynet table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+
+[data-theme="skynet"] th,
+.skynet th {
+  background: linear-gradient(135deg, var(--skynet-bg-secondary), var(--skynet-bg-tertiary));
+  color: var(--skynet-neon-cyan);
+  border-bottom: 2px solid var(--skynet-neon-blue);
+  text-shadow: 0 0 10px var(--skynet-neon-cyan);
+  font-weight: 700;
+  padding: 12px;
+  text-align: left;
+}
+
+[data-theme="skynet"] td,
+.skynet td {
+  border-bottom: 1px solid var(--skynet-border);
+  padding: 10px 12px;
+  color: var(--skynet-text-secondary);
+}
+
+[data-theme="skynet"] tr:hover,
+.skynet tr:hover {
+  background-color: rgba(0, 128, 255, 0.05);
+  box-shadow: inset 0 0 20px rgba(0, 128, 255, 0.1);
+}
+
+/* ============================================
+   LINKS
+   ============================================ */
+
+[data-theme="skynet"] a,
+.skynet a {
+  color: var(--skynet-neon-cyan);
+  text-shadow: 0 0 5px var(--skynet-neon-cyan);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+[data-theme="skynet"] a:hover,
+.skynet a:hover {
+  text-shadow: 0 0 10px var(--skynet-neon-cyan);
+}
+
+/* ============================================
+   BADGES & CHIPS
+   ============================================ */
+
+[data-theme="skynet"] .badge,
+[data-theme="skynet"] .chip,
+[data-theme="skynet"] .tag,
+.skynet .badge,
+.skynet .chip,
+.skynet .tag {
+  background: rgba(0, 128, 255, 0.15);
+  border: 1px solid var(--skynet-neon-blue);
+  color: var(--skynet-neon-cyan);
+  text-shadow: 0 0 5px var(--skynet-neon-cyan);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+/* ============================================
+   SCROLLBARS
+   ============================================ */
+
+[data-theme="skynet"] ::-webkit-scrollbar,
+.skynet ::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+[data-theme="skynet"] ::-webkit-scrollbar-track,
+.skynet ::-webkit-scrollbar-track {
+  background: var(--skynet-bg-primary);
+  border: 1px solid var(--skynet-border);
+}
+
+[data-theme="skynet"] ::-webkit-scrollbar-thumb,
+.skynet ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--skynet-neon-blue), var(--skynet-neon-electric));
+  border-radius: 6px;
+  box-shadow: 0 0 10px var(--skynet-neon-blue);
+}
+
+[data-theme="skynet"] ::-webkit-scrollbar-thumb:hover,
+.skynet ::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 20px var(--skynet-neon-blue);
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes skynet-text-glow {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(0, 180, 255, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(0, 180, 255, 0.8), 0 0 30px rgba(0, 128, 255, 0.6);
+  }
+}
+
+@keyframes skynet-pulse {
+  0%, 100% {
+    box-shadow: 0 0 10px var(--skynet-neon-blue);
+  }
+  50% {
+    box-shadow: 0 0 25px var(--skynet-neon-blue), 0 0 40px var(--skynet-neon-cyan);
+  }
+}
+
+@keyframes skynet-scan-line {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+/* Utility class for pulsing elements */
+[data-theme="skynet"] .pulse,
+.skynet .pulse {
+  animation: skynet-pulse 2s ease-in-out infinite;
+}
+
+/* ============================================
+   WORKFLOW-SPECIFIC STYLES
+   ============================================ */
+
+/* Node styling for workflow builders */
+[data-theme="skynet"] .node,
+.skynet .node {
+  background: var(--skynet-bg-card);
+  border: 2px solid var(--skynet-border);
+  box-shadow: var(--skynet-shadow-card);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+[data-theme="skynet"] .node:hover,
+[data-theme="skynet"] .node.selected,
+.skynet .node:hover,
+.skynet .node.selected {
+  border-color: var(--skynet-neon-cyan);
+  box-shadow: 0 0 30px rgba(0, 180, 255, 0.5);
+}
+
+[data-theme="skynet"] .node.active,
+.skynet .node.active {
+  border-color: var(--skynet-neon-ice);
+  box-shadow: 0 0 40px rgba(77, 166, 255, 0.6);
+  animation: skynet-pulse 1.5s ease-in-out infinite;
+}
+
+[data-theme="skynet"] .node.error,
+.skynet .node.error {
+  border-color: #ff0066;
+  box-shadow: 0 0 30px rgba(255, 0, 102, 0.5);
+}
+
+[data-theme="skynet"] .node.success,
+.skynet .node.success {
+  border-color: var(--skynet-neon-ice);
+  box-shadow: 0 0 30px rgba(77, 166, 255, 0.5);
+}
+
+/* Connection lines */
+[data-theme="skynet"] .connection,
+[data-theme="skynet"] .edge,
+.skynet .connection,
+.skynet .edge {
+  stroke: var(--skynet-neon-blue);
+  stroke-width: 2;
+  filter: drop-shadow(0 0 4px var(--skynet-neon-blue));
+}
+
+[data-theme="skynet"] .connection:hover,
+[data-theme="skynet"] .edge:hover,
+.skynet .connection:hover,
+.skynet .edge:hover {
+  stroke: var(--skynet-neon-cyan);
+  stroke-width: 3;
+  filter: drop-shadow(0 0 8px var(--skynet-neon-cyan));
+}
+
+/* Toolbar */
+[data-theme="skynet"] .toolbar,
+.skynet .toolbar {
+  background: var(--skynet-bg-secondary);
+  border: 1px solid var(--skynet-border);
+  box-shadow: 0 0 20px rgba(0, 128, 255, 0.1);
+}
+
+/* Canvas/Workspace background */
+[data-theme="skynet"] .canvas,
+[data-theme="skynet"] .workspace,
+.skynet .canvas,
+.skynet .workspace {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(0, 128, 255, 0.03) 0%, transparent 50%),
+    linear-gradient(var(--skynet-bg-primary) 1px, transparent 1px),
+    linear-gradient(90deg, var(--skynet-bg-primary) 1px, transparent 1px),
+    var(--skynet-bg-primary);
+  background-size: 100% 100%, 20px 20px, 20px 20px;
+  background-color: var(--skynet-bg-primary);
+}
+
+/* Grid dots pattern alternative */
+[data-theme="skynet"] .canvas.dots,
+.skynet .canvas.dots {
+  background:
+    radial-gradient(circle, rgba(0, 128, 255, 0.2) 1px, transparent 1px),
+    var(--skynet-bg-primary);
+  background-size: 20px 20px;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.skynet-glow {
+  box-shadow: var(--skynet-glow-medium);
+}
+
+.skynet-glow-text {
+  text-shadow: 0 0 10px var(--skynet-neon-cyan);
+}
+
+.skynet-border {
+  border: 2px solid var(--skynet-border);
+}
+
+.skynet-border-glow {
+  border: 2px solid var(--skynet-neon-blue);
+  box-shadow: var(--skynet-glow-soft);
+}

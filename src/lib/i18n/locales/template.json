@@ -1,0 +1,392 @@
+{
+  "common": {
+    "appName": "",
+    "loading": "",
+    "error": "",
+    "success": "",
+    "save": "",
+    "cancel": "",
+    "delete": "",
+    "edit": "",
+    "add": "",
+    "search": "",
+    "filter": "",
+    "close": "",
+    "confirm": "",
+    "back": "",
+    "next": "",
+    "previous": "",
+    "submit": "",
+    "clear": "",
+    "reset": "",
+    "retry": "",
+    "yes": "",
+    "no": "",
+    "optional": "",
+    "required": "",
+    "total": "",
+    "date": "",
+    "time": "",
+    "status": "",
+    "actions": "",
+    "settings": "",
+    "help": ""
+  },
+  "navigation": {
+    "flights": "",
+    "analytics": "",
+    "logbook": "",
+    "passengers": "",
+    "journeys": "",
+    "airports": "",
+    "aircraft": "",
+    "frequentFlyer": "",
+    "documents": "",
+    "research": "",
+    "settings": ""
+  },
+  "analytics": {
+    "title": "",
+    "loadButton": "",
+    "loading": "",
+    "failedToLoad": "",
+    "tabs": {
+      "overview": "",
+      "charts": "",
+      "reports": ""
+    },
+    "charts": {
+      "temporalGeo": {
+        "title": "",
+        "flightPatterns": "",
+        "airportConcentration": ""
+      },
+      "networkComp": {
+        "title": "",
+        "passengerNetwork": "",
+        "passengerMetrics": ""
+      },
+      "aircraftCost": {
+        "title": "",
+        "aircraftUtilization": "",
+        "costBreakdown": ""
+      },
+      "flightOps": {
+        "title": "",
+        "dayNightStats": "",
+        "longHaulFlights": ""
+      },
+      "pilotMetrics": {
+        "title": "",
+        "currencyStatus": "",
+        "monthlyCostTrend": ""
+      },
+      "runwayRisk": {
+        "title": ""
+      }
+    }
+  },
+  "flights": {
+    "title": "",
+    "addFlight": "",
+    "importFlights": "",
+    "exportFlights": "",
+    "flightNumber": "",
+    "departure": "",
+    "arrival": "",
+    "departureAirport": "",
+    "arrivalAirport": "",
+    "departureTime": "",
+    "arrivalTime": "",
+    "aircraft": "",
+    "distance": "",
+    "duration": "",
+    "passengers": "",
+    "notes": "",
+    "status": "",
+    "scheduled": "",
+    "completed": "",
+    "cancelled": "",
+    "delayed": "",
+    "filters": {
+      "all": "",
+      "upcoming": "",
+      "past": "",
+      "today": "",
+      "thisWeek": "",
+      "thisMonth": "",
+      "thisYear": ""
+    },
+    "details": {
+      "title": "",
+      "basicInfo": "",
+      "timing": "",
+      "routeInfo": "",
+      "aircraftInfo": "",
+      "passengerInfo": "",
+      "costInfo": "",
+      "additionalInfo": ""
+    },
+    "import": {
+      "title": "",
+      "selectFile": "",
+      "dragDrop": "",
+      "preview": "",
+      "mapping": "",
+      "validate": "",
+      "import": "",
+      "success": "",
+      "error": ""
+    },
+    "manual": {
+      "title": "",
+      "requiredFields": "",
+      "optionalFields": ""
+    }
+  },
+  "logbook": {
+    "title": "",
+    "totalHours": "",
+    "totalFlights": "",
+    "dayHours": "",
+    "nightHours": "",
+    "takeoffs": "",
+    "landings": "",
+    "dayTakeoffs": "",
+    "nightTakeoffs": "",
+    "dayLandings": "",
+    "nightLandings": "",
+    "approaches": "",
+    "holds": "",
+    "crossCountry": "",
+    "pic": "",
+    "sic": "",
+    "dual": "",
+    "instructor": "",
+    "solo": "",
+    "simulator": "",
+    "instrument": "",
+    "actualInstrument": "",
+    "simulatedInstrument": ""
+  },
+  "passengers": {
+    "title": "",
+    "addPassenger": "",
+    "passengerName": "",
+    "abbreviation": "",
+    "fullName": "",
+    "email": "",
+    "phone": "",
+    "totalFlights": "",
+    "totalDistance": "",
+    "lastFlight": "",
+    "frequentDestinations": "",
+    "details": {
+      "title": "",
+      "flightHistory": "",
+      "statistics": "",
+      "preferences": ""
+    }
+  },
+  "journeys": {
+    "title": "",
+    "createJourney": "",
+    "journeyName": "",
+    "startDate": "",
+    "endDate": "",
+    "flights": "",
+    "totalDistance": "",
+    "totalDuration": "",
+    "destinations": ""
+  },
+  "airports": {
+    "title": "",
+    "addAirport": "",
+    "airportCode": "",
+    "airportName": "",
+    "city": "",
+    "country": "",
+    "latitude": "",
+    "longitude": "",
+    "timezone": "",
+    "visits": "",
+    "lastVisit": "",
+    "runways": "",
+    "elevation": "",
+    "details": {
+      "title": "",
+      "information": "",
+      "statistics": "",
+      "flightHistory": ""
+    }
+  },
+  "aircraft": {
+    "title": "",
+    "addAircraft": "",
+    "manufacturer": "",
+    "model": "",
+    "registration": "",
+    "category": "",
+    "class": "",
+    "totalFlights": "",
+    "totalHours": "",
+    "details": {
+      "title": "",
+      "specifications": "",
+      "performance": "",
+      "flightHistory": ""
+    }
+  },
+  "frequentFlyer": {
+    "title": "",
+    "addProgram": "",
+    "programName": "",
+    "memberNumber": "",
+    "airline": "",
+    "tier": "",
+    "points": "",
+    "miles": "",
+    "expiryDate": "",
+    "benefits": ""
+  },
+  "documents": {
+    "title": "",
+    "addDocument": "",
+    "uploadDocument": "",
+    "documentType": "",
+    "documentName": "",
+    "uploadDate": "",
+    "fileSize": "",
+    "tags": "",
+    "types": {
+      "ticket": "",
+      "boardingPass": "",
+      "receipt": "",
+      "invoice": "",
+      "itinerary": "",
+      "certificate": "",
+      "license": "",
+      "other": ""
+    }
+  },
+  "research": {
+    "title": "",
+    "newResearch": "",
+    "searchQuery": "",
+    "results": "",
+    "sources": "",
+    "citations": "",
+    "relatedFlights": "",
+    "investigators": {
+      "title": "",
+      "addInvestigator": ""
+    },
+    "flightResearch": {
+      "title": "",
+      "searchFlight": ""
+    },
+    "grok": {
+      "title": "",
+      "askQuestion": ""
+    }
+  },
+  "settings": {
+    "title": "",
+    "general": {
+      "title": "",
+      "language": "",
+      "theme": "",
+      "dateFormat": "",
+      "timeFormat": "",
+      "timezone": "",
+      "currency": "",
+      "distanceUnit": "",
+      "themes": {
+        "light": "",
+        "dark": "",
+        "auto": ""
+      },
+      "units": {
+        "kilometers": "",
+        "miles": "",
+        "nauticalMiles": ""
+      }
+    },
+    "database": {
+      "title": "",
+      "location": "",
+      "backup": "",
+      "restore": "",
+      "export": "",
+      "import": ""
+    },
+    "privacy": {
+      "title": "",
+      "dataCollection": "",
+      "analytics": "",
+      "crashReports": ""
+    },
+    "about": {
+      "title": "",
+      "version": "",
+      "buildNumber": "",
+      "licenses": "",
+      "documentation": "",
+      "support": ""
+    }
+  },
+  "setup": {
+    "title": "",
+    "welcome": "",
+    "selectDataset": "",
+    "configure": "",
+    "complete": "",
+    "getStarted": ""
+  },
+  "errors": {
+    "networkError": "",
+    "serverError": "",
+    "notFound": "",
+    "unauthorized": "",
+    "validationError": "",
+    "unknownError": "",
+    "tryAgain": ""
+  },
+  "validation": {
+    "required": "",
+    "invalidEmail": "",
+    "invalidDate": "",
+    "invalidNumber": "",
+    "minLength": "",
+    "maxLength": "",
+    "min": "",
+    "max": ""
+  },
+  "time": {
+    "today": "",
+    "yesterday": "",
+    "tomorrow": "",
+    "thisWeek": "",
+    "lastWeek": "",
+    "thisMonth": "",
+    "lastMonth": "",
+    "thisYear": "",
+    "lastYear": "",
+    "daysAgo": "",
+    "hoursAgo": "",
+    "minutesAgo": "",
+    "justNow": ""
+  },
+  "units": {
+    "km": "",
+    "mi": "",
+    "nm": "",
+    "hours": "",
+    "minutes": "",
+    "seconds": "",
+    "kg": "",
+    "lbs": "",
+    "meters": "",
+    "feet": ""
+  }
+}
