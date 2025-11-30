@@ -276,7 +276,16 @@ Contributions, suggestions, and feedback are welcome. Please open an issue for b
 
 ## License
 
-MIT License - See LICENSE file for details.
+This project is dual-licensed to support both the open-source community and its sustainable development.
+
+#### For Personal, Academic, and Non-Commercial Use
+The source code is freely available for personal, academic, and non-commercial projects under the **MIT License**. You are free to use, modify, and distribute it as long as you provide attribution. See the [LICENSE](LICENSE) file for full details.
+
+#### For Commercial Use
+If you wish to use this software as part of a commercial product, a monetized service, or for internal business operations, you must obtain a **Commercial License**. This model allows the core project to remain open and accessible while funding its continued development and maintenance.
+
+To inquire about a commercial license, please contact **Quantum Encoding Ltd.** at `rich@quantumencoding.io`.```
+
 
 ## Acknowledgments
 
